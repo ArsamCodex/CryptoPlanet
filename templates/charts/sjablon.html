@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HTML5 Web Page Layout</title>
+<style>
+    body {
+        font: 14px Arial,sans-serif;
+        margin: 0px;
+    }
+    header {
+        padding: 10px 20px;
+        background: WHIT;
+        border: 1px solid gray;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+    .container {
+        width: 100%;
+        background: #f2f2f2;
+    }
+    nav, section {
+        float: left;
+        padding: 20px;
+        min-height: 650px;
+        box-sizing: border-box
+
+    }
+    section {
+        width: auto;
+    }
+    nav {
+        width: 20%;
+        background: #d4d7dc;
+    }
+    nav ul {
+        list-style: none;
+        line-height: 24px;
+        padding: 0px;
+    }
+    nav ul li a {
+        color: #333;
+    }
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 400;
+
+        clear: both;
+        visibility: hidden;
+    }
+    footer {
+        background: whit;
+        text-align: center;
+        padding: 5px;
+        border: 2px solid gray
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bitcoin Chart</h1>
+        </header>
+        <div class="wrapper clearfix">
+            <nav>
+                <ul>
+                    <li><a href="http://127.0.0.1:5000/">Home</a></li>
+
+                </ul>
+            </nav>
+            <section>
+
+              <div class="tradingview-widget-container">
+  <div id="tradingview_9f4c7"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">BTCUSDT Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "width": 870,
+  "height": 360,
+  "symbol": "BINANCE:BTCUSDT",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "light",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "allow_symbol_change": true,
+  "container_id": "tradingview_9f4c7"
+}
+  );
+  </script>
+</div>
+            </section>
+        </div>
+        <footer>
+            <p> &copy; CRYPTOPLANT 2022  All RIGHTS RESERVED  </p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+LEVENSVERWACHTING
+
+Technology Waar ik hier gebruikt
+	- PowerBi  als main frame.
+	- Exel als data sheet. 
+
+- Normalisieren -> WholeNumber ?!  ( **-> yEAR 200-08) IMPORTANT TO EXPLAIN ( FIRST ASK THEM ) GET RESULT THAN SAY THE POINT.
+	ARMIN DONT FORGET LET GUYS FIRST SAY ABOUT IT  AFTER THAT TELL THEM THE POINT ( Whole number Extract)
+	( THIS IS GOIN TO EXPLAIN AS EDUCATIONAL PRUPOSE)
+- MultiFunctionl page interface , traditie 2 page
+- Minder pages -> minder Codes -> Minder Bugs(potentiele)  Snelheide, minder werk om next patch of 
+  update uitvoeren
+- Uitstralling  - >Anna
+ 
+-Incoming points -> waar deze app wordt genruikt ( windows - linux - tablet - phone -cloud  ,,,,,) groot scherm klein scherm 
+
+
+Nu From here 
+Deze structuure heeft probleem , en nu wil ik over met jullie spreken en jullie mening is wel 
+	van blang .
+Zo als jullie allemal weten KLANT HEEFT ALLEN MAAR OP PAPIER RECHT OM TE KLACHEN OF NIET TE VREDEN ZIJN , EN WAT IS ONZE MISSIE 
+	OM DEZE RECHT VAN HUN IN TE TREKKEN , HOE? MET GOEDE TECHNISCHE EN GRAPHICE WERK.DUS WIL IK GEEN KLACHTEN HOREN MORGEN 
+	OP LANCIEREN TIJD. 
+
+Ik ga voor veranderingen van structuure . en redennen hebben jullie gehoord , voordelen en nadelen . en nu wil ik tot concolusie 
+	komen .
+Hier is een voorbeeld en sjablon over wat ik wil heben na veranderingen .
+
+
+-----------
+PowerApps TimeSheet opdracht

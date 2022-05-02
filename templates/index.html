@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+</style>
+    <meta charset="UTF-8">
+  <head>
+
+<meta charset="UTF-8">
+      <meta http-equiv="refresh" content="19" />
+    <link rel="stylesheet" href="{{ url_for('static', filename= '/css/style.css') }}">
+
+
+
+       <title> {{price}}~CRYPTO PLANET</title>
+  </head>
+
+
+
+<body>
+
+<div style="border: 1px solid #F0F0F0;height:auto;width:auto">
+    <marquee  direction="left" scrolldelay="80"> <b> <p><img src="/static/btc.jpg"  width="32" height="32" display="inline-block">{{info}}&nbsp;<img src="/static/eth.jpg"  width="32" height="32" display="inline-block">{{info2}}&nbsp;<img src="/static/usdt.jpg"  width="32" height="32" display="inline-block">{{info3}}&nbsp;<img src="/static/bnb.jpg"  width="32" height="32" display="inline-block">{{info4}}</p></b></marquee>
+
+    </div>
+
+
+<div style="background-color:whit;width:50%;height:20%;float:left;border: 2px solid #F0F0F0"><a href="http://127.0.0.1:5000/" style="color: inherit;text-decoration: none;font-size: 0.875em;font-family: Lucida Console"><img src="/static/1.jpg" alt="Trulli" width="300" height="130"></a></div>
+
+<div style="background-color:whit;width:49%;height:135px;float:right;border: 2px solid #F0F0F0;display:inline-block">
+    <img src="/static/recentlly.jpg"  width="32" height="32">
+    <div id="here" style="display:inline-block;"><h5>Last Crypto Listing</h5>
+
+     <table style="border: 1px solid 	#787878;width:700px;border-radius: 10px">
+  <tr>
+    <th style="width:auto;border: 1px solid 	#787878;border-radius: 10px"><br> </th>
+    <th style="width:auto;border: 1px solid 	#787878;border-radius: 10px"><br></th>
+
+  </tr>
+  <tr style="width:auto;border: 1px solid 	#787878;border-radius: 10px">
+      <td style="width:auto;border: 1px solid 	#787878;border-radius: 10px"><br></td>
+    <td style="width:auto;border: 1px solid 	#787878;border-radius: 10px"><br></td>
+
+  </tr>
+  <tr>
+    <td style="width:auto;border: 1px solid 	#787878;border-radius: 10px"><br></td>
+    <td style="width:auto;border: 1px solid 	#787878;border-radius: 10px"><br></td>
+
+  </tr>
+
+</table>
+</div>
+</div>
+
+<!--<div style="padding: 50px; background-color: #98AFC7; display: inline-block; margin-bottom: 2em;width:300px;height:87px">Div three</div>-->
+
+
+
+
+
+
+
+<center><table style="width:70%;border-collapse=collapse">
+	<tr>
+        <th style="background-color:plum">Rank </th>
+		<th style="background-color:plum">Crypto Name </th>
+        <th style="background-color:plum">Symbol</th>
+		<th style="background-color:plum">Price</th>
+        <th style="background-color:plum">Price change last 7 Day</th>
+	</tr>
+	<tr>
+		<td><div style="display:inline-block;vertical-align: middle"></div><img src="/static/btc.jpg"  width="32" height="32" display="inline-block"></td>
+        <td> <a href="http://127.0.0.1:5000/btcchart" style="color: inherit;text-decoration: none;font-size: 0.875em;font-family: Lucida Console"><center><b><p> {{btc}}</p></b></center></a></td>
+        <td><a href="http://127.0.0.1:5000/btcchart" style="color: inherit;text-decoration: none;font-size: 0.875em;font-family: Lucida Console"><center><b><p> {{symbol}}</p></b></center></a></td>
+        <td><a href="http://127.0.0.1:5000/btcchart" style="color: inherit;text-decoration: none;font-size: 0.875em;font-family: Lucida Console"><center><b><p> {{price}}</p></b></center></a></td>
+        <td><a href="http://127.0.0.1:5000/btcchart" style="color: inherit;text-decoration: none;font-size: 0.875em;font-family: Lucida Console"></a><center><img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/1.svg" alt="bitcoin-7d-price-graph" class="h7vnx2-0 bCltOL" loading="lazy"></center></td>
+	</tr>
+    <tr>
+		<td><img src="/static/eth.jpg"  width="32" height="32" display="inline-block"></td>
+		<td><center><b><p style="font-size: 0.875em;font-family: Lucida Console"> {{ethSymbol}}</p></b></center></td>
+        <td><center><b><p style="font-size: 0.875em;font-family: Lucida Console" > {{ethName}}</p></b></center></td>
+		<td><center><b><p style="font-size: 0.875em;font-family: Lucida Console"> {{ethPrice}}</p></b></center></td>
+        <td><p style="font-size: 0.875em;font-family: Lucida Console"><center><img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/1027.svg" alt="ethereum-7d-price-graph" class="h7vnx2-0 bCltOL" loading="lazy"></center></td>
+	</tr>
+    <tr>
+		<td><img src="/static/usdt.jpg"  width="32" height="32" display="inline-block"></td>
+		<td><center><b><p style="font-size: 0.875em;font-family: Lucida Console"> {{usdtName}}</p></b></center></td>
+        <td><center><b><p style="font-size: 0.875em;font-family: Lucida Console"> {{usdtSymbol}}</p></b></center></td>
+		<td><center><b><p style="font-size: 0.875em;font-family: Lucida Console"> {{usdtPrice}}</p></b></center></td>
+        <td><p style="font-size: 0.875em;font-family: Lucida Console"><center><img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/825.svg" alt="tether-7d-price-graph" class="h7vnx2-0 bCltOL" loading="lazy"></center></td>
+	</tr>
+    <tr>
+		<td><img src="/static/bnb.jpg"  width="32" height="32" display="inline-block"></td>
+		<td><center><b><p style="font-size: 0.875em;font-family: Lucida Console"> {{bnbName}}</p></b></center></td>
+        <td><center><b><p style="font-size: 0.875em;font-family: Lucida Console"> {{bnbSymbol}}</p></b></center></td>
+		<td><center><b><p style="font-size: 0.875em;font-family: Lucida Console"> {{bnbPrice}}</p></b></center></td>
+        <td><center><img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/1839.svg" alt="bnb-7d-price-graph" class="h7vnx2-0 bCltOL" loading="lazy"></center></td>
+	</tr>
+<!--    <tr>-->
+<!--		<td><b><p> 5</p></b></td>-->
+<!--	    <td><center><b><p> {{usdcName}}</p></b></center></td>-->
+<!--        <td><center><b><p> {{usdcSymbol}}</p></b></center></td>-->
+<!--		<td><center><b><p> {{usdcPrice}}</p></b></center></td>-->
+<!--        <td><center><b><p> {{time}}</p></b></center></td>-->
+<!--	</tr>-->
+
+
+
+
+</table></center>
+&nbsp;
+<div style="border: 0px solid #F0F0F0;height:auto;border-collapse=collapse;box-shadow: 5px 10px 5px #E8E8E8;">
+
+    <br>
+    <br>
+    <br>
+    <br>
+<!--      <a href="http://127.0.0.1:5000/test2">Blokchains</a>-->
+    </div>
+
+     <table style="border: 0px solid 	#787878;width:100%;border-radius: 10px;margin-top:  40px;">
+  <tr>
+    <th style="width:30%;border: 0px solid 	#787878;border-radius: 10px;box-shadow: 5px 10px 5px plum;"><img src="/static/Cryptoplanet.jpg"  width="210" height="91" display="inline-block"> </th>
+    <th style="width:auto;border: 0px solid 	#787878;border-radius: 10px"><table style="border: 0px solid 	#787878;width:100%;border-radius: 10px;margin-top:  40px;">
+  <tr>
+    <td style="border: 0px solid 	#787878">Contact</td>
+    <td style="border: 0px solid 	#787878">Our API</td>
+    <td style="border: 0px solid 	#787878">Wallet</td>
+    <td style="border: 0px solid 	#787878">Support</td>
+    <td style="border: 0px solid 	#787878">Company</td>
+  </tr>
+  <tr >
+    <td><a href="http://127.0.0.1:5000/login/" style="color: Gray;text-decoration: none;font-size: 0.875em;font-family: Lucida Console">Contact Form</a></td>
+        <td><a href="http://127.0.0.1:5000/api/" style="color: Gray;text-decoration: none;font-size: 0.875em;font-family: Lucida Console">Developer API</a></td>
+
+           <td><a href="http://127.0.0.1:5000/ercgenerate/" style="color: Gray;text-decoration: none;font-size: 0.875em;font-family: Lucida Console">Generate ERC-20 address</a></td>
+
+       <td><a href="http://127.0.0.1:5000/transactions/" style="color: Gray;text-decoration: none;font-size: 0.875em;font-family: Lucida Console">Anonymous Transaction</a></td>
+    <td><a href="#" style="color: Gray;text-decoration: none;font-size: 0.875em;font-family: Lucida Console">CryptoPlanet Ecosystem</a></td>
+  </tr>
+  <tr>
+        <td><a href="http://127.0.0.1:5000/email/" style="color: Gray;text-decoration: none;font-size: 0.875em;font-family: Lucida Console">Email</a></td>
+
+    <td style="border: 0px solid 	#787878"></td>
+    <td style="border: 0px solid 	#787878"></td>
+    <td style="border: 0px solid 	#787878"></td>
+    <td><a href="#" style="color: Gray;text-decoration: none;font-size: 0.875em;font-family: Lucida Console">Staking</a></td>
+  </tr>
+  <tr>
+             <td><a href="http://127.0.0.1:5000/email/" style="color: Gray;text-decoration: none;font-size: 0.875em;font-family: Lucida Console">Telephone</a></td>
+
+    <td style="border: 0px solid 	#787878"></td>
+    <td style="border: 0px solid 	#787878"></td>
+    <td style="border: 0px solid 	#787878"></td>
+      <td><a href="#" style="color: Gray;text-decoration: none;font-size: 0.875em;font-family: Lucida Console">Swap</a></td>
+
+<!--    <td style="border: 0px solid 	#787878">Swap</td>-->
+  </tr>
+
+</table></th>
+
+  </tr>
+  <tr style="width:auto;border: 1px solid 	#787878;border-radius: 10px">
+<!--      <td style="width:auto;border: 1px solid 	#787878;border-radius: 10px"><br></td>-->
+
+
+  </tr>
+
+
+</table>
+
+</body>
+</html>
