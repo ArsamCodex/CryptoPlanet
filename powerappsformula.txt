@@ -1,0 +1,5 @@
+Navigate(AddEdit, ScreenTransition.Cover);Set(EntryVar,"New")
+
+
+
+If(EntryVar="New",Defaults(Table1),EntryVar="Edit",BrowseGallery1.Selected)
