@@ -3,6 +3,7 @@ import io
 from datetime import datetime
 import mysql.connector
 import numpy as np
+from _mysql_connector import MySQL
 from django.shortcuts import redirect
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from matplotlib.figure import Figure
@@ -326,6 +327,7 @@ def identityVerification():
         f.save(app.config["UPLOAD_FOLDER"] + filename)
         return render_template("sucsess.html")
     return render_template("verification.html")
+
 
 
 #
